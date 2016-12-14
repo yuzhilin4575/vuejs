@@ -6,3 +6,5 @@ To get started:
      cd projectname
      npm install时间有点久
      npm run dev
+     然后服务Listening at http://localhost:8080运行在这里
+     
