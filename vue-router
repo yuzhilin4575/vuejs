@@ -1,0 +1,43 @@
+packjson 里添加依赖 "vue-router":"^0.7.13",
+sudo npm install 
+
+在mian.js里引入 import VueRouter from 'vue-router';
+Vue.use(VueRouter);
+
+
+<a v-link="{path:'/good'}">商品</a>
+<a v-link="{path:'/ratings'}">评论</a>
+<a v-link="{path:'/seller'}">商家</a>
+
+  .tab
+      display:flex
+      width:100%
+      height:40px
+      line-height:40px
+      .tab-item
+        flex:1
+        text-align:center
+        
+<router-view></router-view>
+
+
+
+。。。。。。。。。。。。。。。。。。。。。。。。在mainjs里缩进问题太严重
+
+
+
+
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import App from './App';
+import goods from './components/goods/goods';
+Vue.use(VueRouter);
+
+let app空格 = 空格Vue.extend(App);
+let router空格=空格new VueRouter();
+router.map({
+  '/goods':空格{
+    component:空格goods
+  }
+});
+router.start(app,空格'#app');
