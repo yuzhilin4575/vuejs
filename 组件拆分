@@ -1,8 +1,28 @@
-组件拆分上
+一 组件拆分上
 
 视口 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minium-scale=1.0,user-scaleable=no">
 css reset      <link rel="stylesheet" href="static/css/reset.css">
-分号的问题  按视频里的出错  
+分号的问题  按视频里的出错  eslint中进行配置    1js里分号'semi':['error','always']   2缩进   'indent':0    3把 app.vue空行全删了
+/* eslint-disable no-new *／这条目的是    规则校验给 跳过
 
 
-组件拆分中
+
+二 组件拆分下    在 packjson里  加上  "stylus-loader":"^2.1.1", 并安装npm install 
+
+stylus装不上
+stylus-loader@2.4.0的提示解决方案是:
+        第一步:把stylus-loader 改成 "^2.4.0"  比如:  "stylus-loader": "^2.4.0", 如果没有这条记录就自行添加一条
+        第二步:需要多添加一条插件 "stylus": "0.52.4"  在package.json里面增加就好  然后执行安装命令 即可解决
+        
+ app.vue 错误为什么老师报错  所以 把 export default {
+       components: {
+       'v-header': header
+    }
+    };
+    一定要在components: 后     留个    空格    就不会报错路
+    
+ 三   接下来写样式
+    <style lang="stylus" rel="stylesheet/stylus">    要加上 才不会报错
+    
+    四  vue-loader  里的  postcss  插件 自动搞定css兼容问题
+    
