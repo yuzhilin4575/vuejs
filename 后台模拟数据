@@ -3,8 +3,9 @@ data.json文件里模拟数据然后在bulid  dev－server里添加
 
 
 var appData = require('../data.json');
-var seller = appData.goods;
-var rating = appData.ratings;
+var seller = appData.seller;
+var goods = appData.goods;
+var ratings = appData.ratings;
 var apiRoutes = express.Router();
 
  apiRoutes.get('/seller',function (req,res) {
