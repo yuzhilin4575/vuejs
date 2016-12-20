@@ -1,0 +1,31 @@
+data.json文件里模拟数据然后在bulid  dev－server里添加
+
+
+
+var appData = require('../data.json');
+var seller = appData.goods;
+var rating = appData.ratings;
+var apiRoutes = express.Router();
+
+ apiRoutes.get('/seller',function (req,res) {
+  res.json({
+    errno: 0,
+    data: seller
+  })
+});
+
+apiRoutes.get('/goods',function (req,res) {
+  res.json({
+    errno: 0,
+    data: goods
+  })
+});
+
+apiRoutes.get('/rating',function (req,res) {
+  res.json({
+    errno: 0,
+    data: ratings
+  })
+});
+
+app.use('/api',apiRoutes);
