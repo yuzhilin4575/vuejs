@@ -1,0 +1,28 @@
+  const ERR_OK = 0;
+
+    export default{
+        data() {
+            return {
+              seller: {}
+            };
+        },
+        created() {
+          this.$http.get('/api/seller').then((response) => {
+              response = response.body;
+              if (response.errno === ERR_OK) {
+                  this.seller = response.data;
+                  console.log(this.seller);
+              }
+          });
+        },
+       components: {
+       'v-header': header
+    }
+    };
+
+在packjson里安装  "vue-resource":"^1.0.1",
+    
+在eslint里添加这个就是不去检测他     'space-before-function-paren':0
+mianjs    import VueResource from 'vue-resource';
+
+
