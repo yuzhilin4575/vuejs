@@ -25,4 +25,14 @@
 在eslint里添加这个就是不去检测他     'space-before-function-paren':0
 mianjs    import VueResource from 'vue-resource';
 
-
+外部组件1  获取seller对象传给header组件  v－bind缩写:seller="seller"在header.vue里
+export default {
+      props: {
+        seller: {
+          type: Object
+        }
+      }
+    };
+    然后写dom
+    结构
+    这边有个问题  布局问题
