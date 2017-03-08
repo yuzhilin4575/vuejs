@@ -1,0 +1,1 @@
+关于  小球动画 this.$dispatch('cart.add',event.target); 这个$dispatch 在vue1  2  里不同   $emit
