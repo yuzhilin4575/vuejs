@@ -27,9 +27,13 @@ new Vue({
 3App.vue
 <template>
   <div id="app">
-      <div class="header">i header</div>
-      <div class="tab">i header</div>
-      <div class="content">i header</div>
+    <v-header></v-header>
+      <div class="tab">
+        <div class="tab-item">商品</div>
+        <div class="tab-item">评论</div>
+        <div class="tab-item">商家</div>
+      </div>
+      <div class="content">icartr</div>
   </div>
 </template>
 
@@ -38,7 +42,7 @@ new Vue({
 
       export default {
         components:{
-            header
+              'v-header' : header
         }
       };
 </script>
@@ -46,6 +50,7 @@ new Vue({
 <style>
 
 </style>
+
 
 4
 header.vue
