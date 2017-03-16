@@ -1,0 +1,65 @@
+index
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>waimai</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minium-scale=1.0,user-scaleable=no">
+    <link rel="stylesheet" href="static/css/reset.css">
+  </head>
+  <body>
+    <app></app>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
+
+2
+mian.js
+import Vue from 'vue';
+import App from './App';
+
+/* eslint-disable no-new */
+new Vue({
+  el: 'body',
+  components: { App }
+});
+
+3App.vue
+<template>
+  <div id="app">
+      <div class="header">i header</div>
+      <div class="tab">i header</div>
+      <div class="content">i header</div>
+  </div>
+</template>
+
+<script>
+      import header from './components/header/header.vue';
+
+      export default {
+        components:{
+            header
+        }
+      };
+</script>
+
+<style>
+
+</style>
+
+4
+header.vue
+<template>
+      <div class="header">
+        i header
+      </div>
+</template>
+<script type="text/ecmascript-6">
+    export default {
+
+    };
+</script>
+<style>
+
+</style>
+
