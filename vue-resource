@@ -1,0 +1,21 @@
+先在app.vue 
+<script>
+      import header from 'components/header/header.vue';
+
+      export default {
+
+        data() {
+          return {
+            seller:{}
+          };
+        },
+        components:{
+              'v-header' : header
+        }
+      };
+</script>
+安装 vue-resource
+"vue-resource":"^1.0.1",
+
+import VueResource from 'vue-resource';
+Vue.use(VueResource);
